@@ -1,7 +1,8 @@
 version: '3.7'
 services:
   exporter:
-    image: kibatic-exporter
+    image: kibatic/exporter
+    #build: .
     container_name: kibatic-exporter
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
